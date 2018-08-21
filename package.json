@@ -1,0 +1,60 @@
+{
+  "_from": "react-native-wowza-gocoder@^1.0.5",
+  "_id": "react-native-wowza-gocoder@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha1-VTaNF+ShHJjFmamhzfm/W8oxk2c=",
+  "_location": "/react-native-wowza-gocoder",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-native-wowza-gocoder@^1.0.5",
+    "name": "react-native-wowza-gocoder",
+    "escapedName": "react-native-wowza-gocoder",
+    "rawSpec": "^1.0.5",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.5"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-wowza-gocoder/-/react-native-wowza-gocoder-1.0.5.tgz",
+  "_shasum": "55368d17e4a11c98c599a9a1cdf9bf5bca319367",
+  "_spec": "react-native-wowza-gocoder@^1.0.5",
+  "_where": "/Users/dennygeorge/Documents/Quadrant2/Code/mobile-justice",
+  "author": {
+    "name": "MEDL Mobile Enterprises",
+    "email": "dev@medlmobile.com",
+    "url": "https://github.com/medlmobileenterprises"
+  },
+  "bugs": {
+    "url": "https://github.com/medlmobileenterprises/react-native-wowza-gocoder/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Hugo Nagano",
+      "email": "hugo@medlmobile.com"
+    }
+  ],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "React Native wrapper for the Wowza GoCoder SDK",
+  "devDependencies": {},
+  "homepage": "https://github.com/medlmobileenterprises/react-native-wowza-gocoder",
+  "keywords": [
+    "react-native",
+    "wowza",
+    "gocoder",
+    "video",
+    "streaming"
+  ],
+  "license": "MIT",
+  "main": "BroadcastView.js",
+  "name": "react-native-wowza-gocoder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medlmobileenterprises/react-native-wowza-gocoder.git"
+  },
+  "version": "1.0.5"
+}
