@@ -1,27 +1,60 @@
 {
-  "_from": "react-native-wowza-gocoder@^1.0.5",
+  "_args": [
+    [
+      {
+        "raw": "react-native-wowza-gocoder@github:gabrieldefazio/broadcaster",
+        "scope": null,
+        "escapedName": "react-native-wowza-gocoder",
+        "name": "react-native-wowza-gocoder",
+        "rawSpec": "github:gabrieldefazio/broadcaster",
+        "spec": "github:gabrieldefazio/broadcaster",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:gabrieldefazio/broadcaster.git",
+          "sshUrl": "git+ssh://git@github.com/gabrieldefazio/broadcaster.git",
+          "httpsUrl": "git+https://github.com/gabrieldefazio/broadcaster.git",
+          "gitUrl": "git://github.com/gabrieldefazio/broadcaster.git",
+          "shortcut": "github:gabrieldefazio/broadcaster",
+          "directUrl": "https://raw.githubusercontent.com/gabrieldefazio/broadcaster/master/package.json"
+        }
+      },
+      "/Users/gabrieldefazio/mobileJustice/mobile-justice-rn"
+    ]
+  ],
+  "_from": "gabrieldefazio/broadcaster",
   "_id": "react-native-wowza-gocoder@1.0.5",
   "_inBundle": false,
+  "_inCache": true,
   "_integrity": "sha1-VTaNF+ShHJjFmamhzfm/W8oxk2c=",
   "_location": "/react-native-wowza-gocoder",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "react-native-wowza-gocoder@^1.0.5",
-    "name": "react-native-wowza-gocoder",
+    "raw": "react-native-wowza-gocoder@github:gabrieldefazio/broadcaster",
+    "scope": null,
     "escapedName": "react-native-wowza-gocoder",
-    "rawSpec": "^1.0.5",
-    "saveSpec": null,
-    "fetchSpec": "^1.0.5"
+    "name": "react-native-wowza-gocoder",
+    "rawSpec": "github:gabrieldefazio/broadcaster",
+    "spec": "github:gabrieldefazio/broadcaster",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:gabrieldefazio/broadcaster.git",
+      "sshUrl": "git+ssh://git@github.com/gabrieldefazio/broadcaster.git",
+      "httpsUrl": "git+https://github.com/gabrieldefazio/broadcaster.git",
+      "gitUrl": "git://github.com/gabrieldefazio/broadcaster.git",
+      "shortcut": "github:gabrieldefazio/broadcaster",
+      "directUrl": "https://raw.githubusercontent.com/gabrieldefazio/broadcaster/master/package.json"
+    }
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-wowza-gocoder/-/react-native-wowza-gocoder-1.0.5.tgz",
-  "_shasum": "55368d17e4a11c98c599a9a1cdf9bf5bca319367",
-  "_spec": "react-native-wowza-gocoder@^1.0.5",
-  "_where": "/Users/dennygeorge/Documents/Quadrant2/Code/mobile-justice",
+  "_resolved": "git://github.com/gabrieldefazio/broadcaster.git#ec717e106a45246f07e08bf42020a55e8bc17af8",
+  "_shasum": "8bd8d396a88349972034c85abe2f3a280f0cdf34",
+  "_shrinkwrap": null,
+  "_spec": "react-native-wowza-gocoder@github:gabrieldefazio/broadcaster",
+  "_where": "/Users/gabrieldefazio/mobileJustice/mobile-justice-rn",
   "author": {
     "name": "MEDL Mobile Enterprises",
     "email": "dev@medlmobile.com",
@@ -41,6 +74,7 @@
   "deprecated": false,
   "description": "React Native wrapper for the Wowza GoCoder SDK",
   "devDependencies": {},
+  "gitHead": "ec717e106a45246f07e08bf42020a55e8bc17af8",
   "homepage": "https://github.com/medlmobileenterprises/react-native-wowza-gocoder",
   "keywords": [
     "react-native",
@@ -52,6 +86,9 @@
   "license": "MIT",
   "main": "BroadcastView.js",
   "name": "react-native-wowza-gocoder",
+  "optionalDependencies": {},
+  "readme": "\n# react-native-wowza-gocoder\n\n## About\nThis is a Native Module for React Native that allows integration of Wowza's GoCoder SDK in less time.  It has been battle tested on our internal and client projects.  !Note* we require RN 0.42+ for this to work!  \n\n## Getting started\n\n`$ npm install react-native-wowza-gocoder --save`\n\n### Mostly automatic installation\n\n`$ react-native link react-native-wowza-gocoder`\n\n### Manual installation\n\n\n#### iOS\n\n1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`\n2. Go to `node_modules` ➜ `react-native-wowza-gocoder` and add `RNWowzaBroadcaster.xcodeproj`\n3. In XCode, in the project navigator, select your project. Add `libRNWowzaBroadcaster.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`\n4. Run your project (`Cmd+R`)<\n\n##### Post installation iOS\n1. After obtaining WowzaGoCoderSDK framework and the wowzastatic-lib, add them both to a folder in the root directory of the project.\n2. Add the WowzaGoCoderSDK.framework to the build phases for your app target, add a copy files phase with the WowzaGoCoder.SDK http://www.wowza.com/resources/gocodersdk/docs/1.0/intro-installation/\n\n#### Android\n\n1. Open up `android/app/src/main/java/[...]/MainActivity.java`\n  - Add `import com.rngocoder.RNWowzaBroadcasterPackage;` to the imports at the top of the file\n  - Add `new RNWowzaBroadcasterPackage()` to the list returned by the `getPackages()` method\n2. Append the following lines to `android/settings.gradle`:\n  \t```\n  \tinclude ':react-native-wowza-gocoder'\n  \tproject(':react-native-wowza-gocoder').projectDir = new File(rootProject.projectDir, \t'../node_modules/react-native-wowza-gocoder/android')\n  \t```\n3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:\n  \t```\n      compile project(':react-native-wowza-gocoder')\n  \t```\n\n##### Post installation Android\n1. After obtaining WowzaGoCoderSDK aar file, add it to your nodemodules/react-native-wowza-gocoder to the libs directory(create it if needed), it's also need to add the dependency on your main app, add the aar file to libs directory(create it if needed). \n2. Then add the following lines to both build.gradle files, on nodemodules/react-native-wowza-gocoder and app/build.gradle\n``` build.gradle\n    repositories {\n        flatDir {\n            dirs 'libs'\n        }\n    }\n    \n    dependencies {\n        compile fileTree(dir: 'libs', include: ['*.jar'])\n    \n        // The GoCoder SDK library dependency declaration\n        compile 'com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0@aar'\n    \n        // List additional dependencies here...\n    \n    }\n```\n\n3. http://www.wowza.com/resources/gocodersdk/docs/1.0/intro-installation/\n\n## Usage\n\n1. Import the module\n`import BroadcastView from 'react-native-wowza-gocoder';`\n2. Set a config\n  ```javascript\n  const config ={\n    hostAddress:'',\n    applicationName:'',\n    username:'',\n    password:'',\n    streamName:'',\n    sdkLicenseKey:''\n  };\n  ```\n  \n3. Add functions for debug, testing\n  ```javascript \n  onBroadcastStart(){\n    console.log(\"Bcast start\");\n  }\n  onBroadcastFail(){\n    console.log(\"Bcast fail\");\n  }\n  onBroadcastStatusChange(){\n    console.log(\"Bcast status change\");\n  }\n  onBroadcastEventReceive(){\n    console.log(\"Bcast event receive\");\n  }\n  onBroadcastErrorReceive(){\n    console.log(\"Bcast error receive\");\n  }\n  onBroadcastVideoEncoded(){\n    console.log(\"Bcast encoded\");\n  }\n  onBroadcastStop(){\n    console.log(\"Bcast stop\");\n  }\n  ```\n  \n4. Use the component in render\n```javascript \n<BroadcastView style= {styles.videoContainer}\n                     hostAddress = {config.hostAddress}\n                     applicationName = {config.applicationName}\n                     broadcastName={config.streamName}\n                     broadcasting = {false}\n                     username = {config.username}\n                     password = {config.password}\n                     sizePreset = {3}\n                     port={1935}\n                     muted = {false}\n                     flashOn = {false}\n                     frontCamera =  {false}\n                     onBroadcastStart= {this.onBroadcastStart}\n                     onBroadcastFail= {this.onBroadcastFail}\n                     onBroadcastStatusChange= {this.onBroadcastStatusChange}\n                     onBroadcastEventReceive= {this.onBroadcastEventReceive}\n                     onBroadcastErrorReceive= {this.onBroadcastErrorReceive}\n                     onBroadcastVideoEncoded = {this.onBroadcastVideoEncoded}\n                     onBroadcastStop = {this.onBroadcastStop}\n                     sdkLicenseKey={config.sdkLicenseKey}\n      >\n  </BroadcastView> \n  ```\n \n \n5. Be sure to use absolute positioning on your styles otherwise the video may not show correctly\n  ```javascript \n\n  const styles = StyleSheet.create({\n    container: {\n      flex: 1,\n    },\n    videoContainer:{\n      position:'absolute',\n      top:0,\n      left:0,\n      right:0,\n      bottom:40\n    }\n  });\n  ```\n* Optional: If you are familiar with controlling state then you could trigger start/stop of streaming by passing state in the BroadcastView component prop broadcasting.  example broadcasting = {false} to broadcasting = {this.state.brodcasting} *\n  //Using the broadcast module\n  \n    `var BroadcastManager =  NativeModules.BroadcastModule;`\n  \n    `BroadcastManager.startTimer(1, 3600);`\n* Android only - first argument - timer interval, second argument time to timeout timer in seconds\n  \n* Stop Timer when stopping the broadcast - Android only       \n    `BroadcastManager.stopTimer();`\n\n## Running the example project\n\nInstall and link dependencies\n```\ncd react-native-wowza-gocoder/example\nnpm install\nreact-native-link\n```\n\n### iOS\n1. Download the GoCoder SDK - https://www.wowza.com/pricing/installer#gocodersdk-downloads\n2. Unzip and add \"wowzagocoder_static_lib\" and \"WowzaGoCoderSDK.framework\" to /example/ios/\n3. Open /example/ios/example.xcodeproj in Xcode\n4. From the Xcode Project Navigator, select the \"example\" project and the \"example\" target\n5. On the \"General\" tab configure the \"Identity\" settings with your app bundle identifier (should match the bundleID tied to your GoCoder license)\n    * If you don't have a license key you can register for a free trial: https://www.wowza.com/products/gocoder/sdk/trial\n6. Configure your \"Signing\" settings with your provisioning profiles\n7. Configure your GoCoder license key and Wowza server settings in example/wowzaConfig.js\n8. Run your project on a device (will not work properly on simulator)\n\n### Android\n1. Download the GoCoder SDK - https://www.wowza.com/pricing/installer#gocodersdk-downloads\n2. Unzip and add \"com.wowza.gocoder.sdk.aar\" to /example/android/app/libs/ (you may have to create the libs folder)\n3. Also add \"com.wowza.gocoder.sdk.aar\" to /example/node_modules/react-native-wowza-broadcaster/libs/\n3. Open /example/android in Android Studio and rename the package to match the package name tied to your GoCoder license\n    * If you don't have a license key you can register for a free trial: https://www.wowza.com/products/gocoder/sdk/trial\n7. Configure your GoCoder license key and Wowza server settings in example/wowzaConfig.js\n8. Run your project on a device (will not work properly on simulator)\n\n## TODOS\n\n- [ ] Add better support for the size preset props for both platforms\n- [ ] Add a config for the different keys provided per platform\n- [ ] Create a sample project for Android\n# broadcaster\n",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/medlmobileenterprises/react-native-wowza-gocoder.git"
